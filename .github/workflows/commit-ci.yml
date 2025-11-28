@@ -27,6 +27,7 @@ jobs:
         run: ./action-build.sh package
       
       - name: Apply librime-qjs
+        run: |
           curl -LO https://github.com/HuangJian/librime-qjs/releases/download/v1.2.0/librime-qjs-5f17ba1-macOS-universal.tar.bz2
           mkdir librime-qjs
           cd librime-qjs
